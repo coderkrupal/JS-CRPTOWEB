@@ -7,22 +7,81 @@
 .main_container {
     width: 100%;
     height: 100vh;
-    background: rgb(41, 65, 157);
-    background: linear-gradient(90deg, rgba(41, 65, 157, 1) 0%, rgba(0, 0, 224, 1) 26%, rgba(191, 44, 171, 1) 56%);
+    background: rgb(12,12,15);
+    background: linear-gradient(90deg, rgba(12,12,15,1) 100%, rgba(231,231,231,0.9744690112373074) 100%, rgba(17,20,20,1) 100%, rgba(9,9,121,1) 100%);
     opacity: 0.9;
 }
 
-.navbar{
+.navbar {
     width: 100%;
     height: 80px;
-    background-color: white;
+    background: rgba(225, 225, 225, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(242, 242, 242, 0.25);
     display: flex;
+    align-items: center;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
- #crypto_logo{
-    width: 100px;
-    height:60px;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: 10px;
+}
+
+#crypto_logo {
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     margin-left: 20px;
 }
+
+
+a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    transition: all 0.5s linear;
+}
+
+a:hover {
+    border-bottom: 2px solid blue;
+}
+
+.hero_section {
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+    background-color: black;
+    border-radius: 50px;
+}
+ .crypto_image{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+ }
+
+ .left_image_crypto{
+    width: 320px;
+    height: 300px;
+     background-image: url('/CryptoImage/cryprocurrency.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  border-radius: 10px;
+ }
+
+ .right_image_crpyto{
+    background-image: url('/CryptoImage/crypto2.jpg');
+    width: 700px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+ }
